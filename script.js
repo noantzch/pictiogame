@@ -25,16 +25,14 @@ const clearCanvasButton = document.getElementById('clearCanvasButton');
 // --- Variables de Estado del Juego ---
 // Frases por defecto. Se cargarán/sobreescribirán desde sessionStorage.
 let phrases = [
-    "El sol siempre sale",
-    "La luna es de queso",
-    "Los gatos son muy curiosos",
-    "Aprender a programar es divertido",
-    "Argentina es un país hermoso",
-    "El arte de la paciencia",
-    "Un camino a la vez",
-    "La mejor de todas las cosas",
-    "El futuro está en tus manos",
-    "Donde hay voluntad hay un camino"
+    "No metas a tu abuela muerta",
+    "Perreo hasta el suelo",
+    "Me vengo",
+    "Tini tini tini",
+    "Harry Potter",
+    "Barbie",
+    "La vaca lola",
+    "Es la guitarra de lolo"
 ];
 let usedPhraseIndexes = [];
 let currentPhrase = '';
