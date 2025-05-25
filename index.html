@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Frase y Dibuja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen" class="screen active">
+        <h1>Bienvenido</h1>
+        <button id="startButton">COMENZAR</button>
+        <button id="managePhrasesButton" class="secondary-button">Administrar Frases</button>
+    </div>
+
+    <div id="managePhrasesScreen" class="screen">
+        <h2>Administrar Frases</h2>
+        <div class="phrase-input-container">
+            <input type="text" id="newPhraseInput" placeholder="Escribe una nueva frase aquí">
+            <button id="addPhraseButton">Agregar Frase</button>
+        </div>
+        <ul id="editablePhrasesList">
+            </ul>
+        <button id="backToStartButton" class="secondary-button">Volver al Inicio</button>
+    </div>
+
+    <div id="phraseListScreen" class="screen">
+        <h2>Elige una Frase</h2>
+        <ul id="phrasesList">
+            </ul>
+        <button id="backToManageButton" class="secondary-button">Volver a Administrar</button>
+    </div>
+
+    <div id="gameScreen" class="screen">
+        <div class="header-game">
+            <div id="revealedPhraseContainer" class="revealed-phrase">
+                </div>
+            <div class="game-controls">
+                <span id="timer">01:30</span>
+                <button id="finishButton">Terminar</button>
+            </div>
+        </div>
+
+        <div class="drawing-area">
+            <canvas id="drawingCanvas"></canvas>
+            <div class="toolbar">
+                <button id="pencilTool" class="active">Lápiz</button>
+                <button id="eraserTool">Borrador</button>
+                <input type="color" id="colorPicker" value="#000000">
+                <input type="range" id="lineWidthSlider" min="1" max="20" value="5">
+                <button id="clearCanvasButton">Limpiar Pizarra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
